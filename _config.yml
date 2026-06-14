@@ -1,0 +1,44 @@
+# --- Site settings ---------------------------------------------------------
+title: Riann Composites
+tagline: Fiberglass & Carbon Fiber Repair Specialist
+description: >-
+  Riann Composites are fiberglass and carbon fiber repair specialists based in
+  Tulla, Co. Clare, Ireland. We repair campers, boats, cars, carbon fiber parts
+  and industrial structures — saving you thousands compared to replacement.
+  We repair it, we don't replace it.
+
+# IMPORTANT — baseurl
+# Leave url/baseurl as below for a custom domain (e.g. rianncomposites.ie) or a
+# user/org page (username.github.io). For a PROJECT page served at
+# https://USERNAME.github.io/REPO/ set:  baseurl: "/REPO"
+url: ""
+baseurl: ""
+
+# Business / contact details (used across templates)
+business:
+  phone_display: "+353 87 123 4567"
+  phone_link: "+353871234567"
+  whatsapp: "353871234567"
+  email: "info@rianncomposites.ie"
+  address: "Tulla, Co. Clare, Ireland"
+  area: "Serving customers across Ireland"
+
+# Contact form — replace with your own Formspree endpoint to receive emails.
+# Sign up free at https://formspree.io and paste the form ID below.
+formspree_id: "your-form-id"
+
+# --- Build settings --------------------------------------------------------
+markdown: kramdown
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
+  - "WhatsApp Image 2026-06-07 at 7.14.17 PM.jpeg"
+  - "WhatsApp Image 2026-06-11 at 6.26.27 PM.jpeg"
+  - preview_build.py
+  - _preview

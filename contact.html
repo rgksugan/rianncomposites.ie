@@ -1,0 +1,86 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+description: >-
+  Contact Riann Composites in Tulla, Co. Clare. Call, email or WhatsApp photos
+  for a free fiberglass or carbon fiber repair quote. Mobile service across Ireland.
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Get In Touch</p>
+    <h1 class="page-hero__title">Send photos for a free quote</h1>
+    <p class="page-hero__lead">Quick response · No obligation · Honest advice. The fastest way to a
+      quote is to WhatsApp us photos of the damage.</p>
+  </div>
+</section>
+
+<section class="section contact">
+  <div class="container contact__grid">
+    <div class="contact__info">
+      <h2 class="section__title">Contact details</h2>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></svg></span>
+          <div><strong>Phone</strong><a href="tel:{{ site.business.phone_link }}">{{ site.business.phone_display }}</a></div>
+        </li>
+        <li>
+          <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm8 7L4.5 6.5v.2L12 12l7.5-5.3v-.2z"/></svg></span>
+          <div><strong>Email</strong><a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a></div>
+        </li>
+        <li>
+          <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11a2.5 2.5 0 0 0 0-4.5z"/></svg></span>
+          <div><strong>Workshop</strong><span>{{ site.business.address }}</span></div>
+        </li>
+        <li>
+          <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></span>
+          <div><strong>WhatsApp</strong><a href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Message us photos for a quote</a></div>
+        </li>
+      </ul>
+
+      <p class="contact__note">{{ site.business.area }} · 🇮🇪 Proudly Irish owned</p>
+
+      <a class="btn btn--wa btn--lg" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Open WhatsApp Chat</a>
+    </div>
+
+    <div class="contact__form-wrap">
+      <h2 class="section__title">Request a free assessment</h2>
+      <form class="contact-form" action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label for="type">What needs repairing?</label>
+          <select id="type" name="repair_type">
+            <option>Camper / Motorhome</option>
+            <option>Marine / Boat</option>
+            <option>Automotive</option>
+            <option>Carbon fiber part</option>
+            <option>Industrial / Roofing</option>
+            <option>Custom fabrication</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Describe the damage</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--accent btn--lg">Send Enquiry</button>
+        <p class="form-note">Prefer to send photos? WhatsApp is the fastest way to get a quote.</p>
+      </form>
+    </div>
+  </div>
+</section>

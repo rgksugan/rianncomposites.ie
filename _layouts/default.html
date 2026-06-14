@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include topbar.html %}
+  {% include header.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
+  <a class="float-wa" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.25.7-1.45 1.34-2 1.4-.5.06-1.16.09-1.87-.12a15 15 0 0 1-1.7-.63 11.6 11.6 0 0 1-4.4-3.9c-.33-.45-1.07-1.43-1.07-2.73s.68-1.94.92-2.2a.96.96 0 0 1 .7-.33c.17 0 .34 0 .49.01.16.01.37-.06.58.44.21.51.72 1.77.78 1.9.06.13.1.28.02.45-.08.17-.12.28-.24.43-.12.15-.25.33-.36.44-.12.12-.24.25-.1.49.13.24.6.98 1.28 1.59.88.78 1.62 1.02 1.86 1.14.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.21.08 1.37.65 1.6.77.24.12.4.18.46.28.06.1.06.58-.19 1.28z"/></svg>
+  </a>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
