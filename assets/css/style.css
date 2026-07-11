@@ -23,7 +23,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -550,11 +550,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .process__steps { grid-template-columns: repeat(2, 1fr); row-gap: 2.6rem; }
   .process__steps--six { grid-template-columns: repeat(2, 1fr); }
-  .topbar__appt { display: none; }
 }
 
 @media (max-width: 860px) {
-  .topbar__loc, .topbar__badge { display: none; }
+  .topbar__contacts li.topbar__loc, .topbar__badge { display: none; }
   .nav-toggle { display: flex; }
   .primary-nav {
     position: fixed; inset: 0 0 0 auto; width: min(82vw, 340px);
