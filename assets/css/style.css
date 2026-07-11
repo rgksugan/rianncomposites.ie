@@ -449,12 +449,108 @@ ul { margin: 0; padding: 0; list-style: none; }
   .float-wa { animation: none; }
 }
 
+/* ------------------------- Prose sections ------------------------- */
+.prose { max-width: 760px; margin: 0 auto; }
+.prose .section__title { margin-bottom: 1.1rem; }
+.prose > p { color: var(--muted); font-size: 1.05rem; }
+.prose__lead {
+  font-family: "Oswald", sans-serif; color: var(--navy); font-size: 1.25rem;
+  letter-spacing: .3px; margin-top: 1.4rem;
+}
+
+/* Who we are — statement lines */
+.who__statement { display: grid; gap: .6rem; margin-top: 1.6rem; }
+.who__statement li {
+  font-family: "Oswald", sans-serif; text-transform: uppercase; letter-spacing: .5px;
+  color: var(--navy); font-size: 1.05rem; padding-left: 1.6rem; position: relative;
+}
+.who__statement li::before {
+  content: ""; position: absolute; left: 0; top: .55em; width: 10px; height: 3px; background: var(--accent);
+}
+.who__statement li:last-child { color: var(--accent-2); }
+
+/* About founder quote panel */
+.about__stat--quote strong { font-size: 1.35rem; color: var(--navy); }
+.about__stat--quote span { display: block; margin-top: .3rem; }
+
+/* Service card intros & notes */
+.service-card__intro { color: var(--ink); font-weight: 600; font-size: .95rem; margin: 0 0 .3rem; }
+.service-card__note {
+  margin: 1rem 0 0; padding-top: .9rem; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .85rem; font-style: italic;
+}
+.service-card--feature .service-card__intro { color: #fff; }
+.service-card--feature .service-card__note { color: #c4cfe4; border-top-color: rgba(255,255,255,.15); }
+.services__cta {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem;
+  margin-top: 2.4rem; padding: 1.6rem 1.9rem; background: var(--navy); border-radius: var(--radius);
+}
+.services__cta p { margin: 0; color: #dbe4f2; font-family: "Oswald", sans-serif; font-size: 1.15rem; letter-spacing: .3px; }
+
+/* 6-step process */
+.process__steps--six { grid-template-columns: repeat(3, 1fr); row-gap: 2.8rem; }
+
+/* Two-column tick lists */
+.ticks--two { grid-template-columns: 1fr 1fr; }
+
+/* Warranty */
+.warranty__badge {
+  margin-top: 1.6rem; padding: 1rem 1.4rem; border-radius: 12px;
+  background: rgba(22,182,201,.12); border: 1px solid rgba(22,182,201,.35);
+  color: var(--navy); font-size: 1.1rem;
+}
+.warranty__badge strong { color: var(--accent-2); }
+
+/* What we don't repair */
+.norepair__list { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: 1.4rem 0; }
+.norepair__list li {
+  position: relative; padding-left: 2rem; color: var(--ink); font-weight: 500;
+}
+.norepair__list li::before {
+  content: "✕"; position: absolute; left: 0; top: 0; width: 1.4rem; height: 1.4rem;
+  border-radius: 50%; background: rgba(217,72,59,.12); color: #d9483b;
+  display: grid; place-items: center; font-size: .75rem; font-weight: 700;
+}
+
+/* FAQ accordion */
+.faq__list { max-width: 820px; margin: 0 auto; display: grid; gap: .9rem; }
+.faq__item {
+  border: 1px solid var(--line); border-radius: 12px; background: #fff;
+  padding: 0 1.4rem; transition: box-shadow .2s ease, border-color .2s ease;
+}
+.faq__item[open] { box-shadow: var(--shadow-sm); border-color: transparent; }
+.faq__item summary {
+  cursor: pointer; list-style: none; padding: 1.15rem 2rem 1.15rem 0; position: relative;
+  font-family: "Oswald", sans-serif; font-weight: 500; color: var(--navy);
+  font-size: 1.08rem; letter-spacing: .3px;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+  font-size: 1.5rem; color: var(--accent-2); line-height: 1; transition: transform .2s ease;
+}
+.faq__item[open] summary::after { content: "–"; }
+.faq__item p { color: var(--muted); margin: 0 0 1.2rem; }
+
+/* Contact — please send block */
+.contact__send { margin: 1.6rem 0; }
+.contact__send h3 { color: var(--navy); font-size: 1.15rem; margin-bottom: .8rem; }
+
+/* Footer tagline */
+.footer__tag { margin: 1rem 0; color: #c4cfe4; }
+.footer__tag strong { color: var(--accent); font-family: "Oswald", sans-serif; letter-spacing: .5px; }
+
+/* Topbar appointment note */
+.topbar__appt { color: #aebbd4; }
+
 /* --------------------------- Responsive --------------------------- */
 @media (max-width: 1024px) {
   .promises__grid { grid-template-columns: repeat(3, 1fr); }
   .promise:nth-child(3) { border-right: 0; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .process__steps { grid-template-columns: repeat(2, 1fr); row-gap: 2.6rem; }
+  .process__steps--six { grid-template-columns: repeat(2, 1fr); }
+  .topbar__appt { display: none; }
 }
 
 @media (max-width: 860px) {
@@ -488,7 +584,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   .promises__grid { grid-template-columns: 1fr; }
   .promise { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); }
   .services__grid { grid-template-columns: 1fr; }
-  .process__steps { grid-template-columns: 1fr; }
+  .process__steps, .process__steps--six { grid-template-columns: 1fr; }
   .custom__list, .field-row { grid-template-columns: 1fr; }
+  .ticks--two, .norepair__list { grid-template-columns: 1fr; }
+  .services__cta { flex-direction: column; align-items: flex-start; }
   .hero__actions .btn, .cta-band__actions .btn { width: 100%; }
 }

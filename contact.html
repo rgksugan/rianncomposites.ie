@@ -10,9 +10,10 @@ description: >-
 <section class="page-hero">
   <div class="container">
     <p class="eyebrow eyebrow--light">Get In Touch</p>
-    <h1 class="page-hero__title">Send photos for a free quote</h1>
-    <p class="page-hero__lead">Quick response · No obligation · Honest advice. The fastest way to a
-      quote is to WhatsApp us photos of the damage.</p>
+    <h1 class="page-hero__title">Get a repair quote</h1>
+    <p class="page-hero__lead">Send us photos of the damaged part and we'll give you an honest repair
+      opinion. The fastest way to a quote is to WhatsApp us photos of the damage. Workshop visits by
+      appointment only.</p>
   </div>
 </section>
 
@@ -32,7 +33,7 @@ description: >-
         </li>
         <li>
           <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11a2.5 2.5 0 0 0 0-4.5z"/></svg></span>
-          <div><strong>Workshop</strong><span>{{ site.business.address }}</span></div>
+          <div><strong>Location</strong><span>{{ site.business.address }}</span></div>
         </li>
         <li>
           <span class="contact__ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></span>
@@ -40,7 +41,19 @@ description: >-
         </li>
       </ul>
 
-      <p class="contact__note">{{ site.business.area }} · 🇮🇪 Proudly Irish owned</p>
+      <div class="contact__send">
+        <h3>Please send</h3>
+        <ul class="ticks">
+          <li>Close-up photos of the damage</li>
+          <li>A full photo of the part</li>
+          <li>Machine, vehicle, boat or campervan model</li>
+          <li>Approximate size of the damaged area</li>
+          <li>Photos of any broken pieces</li>
+          <li>Your location</li>
+        </ul>
+      </div>
+
+      <p class="contact__note">Workshop visits by appointment only · {{ site.business.address }} · 🇮🇪 Proudly Irish owned</p>
 
       <a class="btn btn--wa btn--lg" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Open WhatsApp Chat</a>
     </div>

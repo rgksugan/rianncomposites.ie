@@ -10,16 +10,16 @@ OUT = os.path.join(ROOT, "_preview")
 
 SITE = {
     "title": "Riann Composites",
-    "tagline": "Fiberglass & Carbon Fiber Repair Specialist",
-    "description": "Riann Composites are fiberglass and carbon fiber repair specialists based in Tulla, Co. Clare, Ireland. We repair campers, boats, cars, carbon fiber parts and industrial structures — saving you thousands compared to replacement. We repair it, we don't replace it.",
+    "tagline": "Fibreglass, Carbon Fibre & Plastic Panel Repair · Co. Clare",
+    "description": "Riann Composites repairs fibreglass, carbon fibre and selected plastic panels for campervans, boats, tractors, farm machinery, vehicles and custom parts in Co. Clare, Ireland. Honest assessment, proper preparation and strong repairs. We repair it — not replace it. Workshop visits by appointment only.",
     "formspree_id": "your-form-id",
     "business": {
-        "phone_display": "+353 87 123 4567",
-        "phone_link": "+353871234567",
-        "whatsapp": "353871234567",
+        "phone_display": "087 695 5969",
+        "phone_link": "+353876955969",
+        "whatsapp": "353876955969",
         "email": "info@rianncomposites.ie",
-        "address": "Tulla, Co. Clare, Ireland",
-        "area": "Serving customers across Ireland",
+        "address": "Co. Clare, Ireland",
+        "area": "Workshop-based in Co. Clare · By appointment only",
     },
 }
 BASEURL = ""  # local preview served at root
