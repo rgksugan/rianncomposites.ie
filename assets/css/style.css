@@ -150,7 +150,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__eyebrow::before { content: ""; position: absolute; left: 0; top: 50%; width: 2.6rem; height: 2px; background: var(--accent); }
 .hero__title { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 700; letter-spacing: 1px; margin-bottom: 1.1rem; }
 .hero__title .accent { color: var(--accent); }
-.hero__lead { font-size: clamp(1.05rem, 2vw, 1.3rem); color: #d4ddee; max-width: 580px; margin-bottom: 2rem; }
+.hero__lead { font-size: clamp(1.05rem, 2vw, 1.3rem); color: #d4ddee; max-width: 580px; margin-bottom: 0.75rem; }
+.hero__sub { font-size: clamp(0.9rem, 1.6vw, 1.05rem); color: #7e9ab5; max-width: 560px; margin-bottom: 2rem; line-height: 1.6; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.8rem; }
 .hero__chips { display: flex; flex-wrap: wrap; gap: .7rem; }
 .hero__chips li {
