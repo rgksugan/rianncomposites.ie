@@ -4,7 +4,7 @@
     {
       "name": "riann-preview",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8766", "--directory", "_preview"],
+      "runtimeArgs": ["serve.py", "8766"],
       "port": 8766
     }
   ]
