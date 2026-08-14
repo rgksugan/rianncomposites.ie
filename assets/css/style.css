@@ -282,8 +282,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .stat span { color: #aebbd4; font-size: .92rem; }
 
 /* ----------------------------- Process ---------------------------- */
-.process__steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; counter-reset: step; }
-.process__steps li { position: relative; padding: 2.4rem 1.4rem 1.6rem; background: var(--bg-alt); border-radius: var(--radius); }
+.process__steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; counter-reset: step; list-style: none; }
+.process__steps li { position: relative; padding: 2.4rem 1.4rem 1.6rem; background: var(--bg-alt); border-radius: var(--radius); list-style: none; }
 .process__num {
   position: absolute; top: -22px; left: 1.4rem;
   width: 48px; height: 48px; border-radius: 12px; background: var(--accent); color: #06222a;
@@ -417,6 +417,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .site-footer { background: var(--navy-3); color: #aab6cf; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 2.5rem; padding: clamp(3rem, 6vw, 4.5rem) 0 2.5rem; }
 .footer-logo { line-height: 1; margin-bottom: 1rem; }
+.footer-logo__img { height: 48px; width: auto; background: #fff; padding: 6px 10px; border-radius: 6px; }
 .footer-logo__name { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 2rem; color: #fff; letter-spacing: 2px; }
 .footer-logo__swoosh { color: var(--accent); }
 .footer-logo__sub { display: block; font-family: "Oswald", sans-serif; letter-spacing: 6px; font-size: .95rem; color: #8d9bba; margin-top: 2px; }
