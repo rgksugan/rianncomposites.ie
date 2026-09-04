@@ -11,7 +11,7 @@ description: >-
 # Leave url/baseurl as below for a custom domain (e.g. rianncomposites.ie) or a
 # user/org page (username.github.io). For a PROJECT page served at
 # https://USERNAME.github.io/REPO/ set:  baseurl: "/REPO"
-url: ""
+url: "https://rianncomposites.ie"
 baseurl: ""
 
 # Business / contact details (used across templates)
@@ -26,6 +26,20 @@ business:
 # Contact form — replace with your own Formspree endpoint to receive emails.
 # Sign up free at https://formspree.io and paste the form ID below.
 formspree_id: "your-form-id"
+
+# --- SEO / social -----------------------------------------------------------
+# Used by jekyll-seo-tag for structured meta output
+author: "Riann Composites"
+logo: "/assets/images/riann-logo.jpeg"
+
+social:
+  name: Riann Composites
+  links: []
+
+# --- Plugins ----------------------------------------------------------------
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # --- Build settings --------------------------------------------------------
 markdown: kramdown
