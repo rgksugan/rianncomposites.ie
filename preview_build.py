@@ -18,7 +18,7 @@ SITE = {
         "phone_link": "+353876955969",
         "whatsapp": "353876955969",
         "email": "info@rianncomposites.ie",
-        "address": "Co. Clare, Ireland",
+        "address": "Unit 18, Gort Road Enterprise Centre, Ennis, Co. Clare",
         "area": "Workshop-based in Co. Clare · By appointment only",
     },
 }
