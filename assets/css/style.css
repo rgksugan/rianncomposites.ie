@@ -479,6 +479,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex; flex-direction: column; gap: .8rem;
 }
 .about__founders .about__stat { position: static; }
+.about__subhead {
+  font-family: "Oswald", sans-serif; color: var(--navy); font-size: 1.35rem;
+  margin: 2rem 0 .2rem; padding-top: 1.6rem; border-top: 1px solid var(--line);
+}
+.about__tagline { color: var(--accent-2); font-weight: 600; margin-top: 0; }
+.about__body .prose__lead { margin: .4rem 0 1.4rem; }
 
 /* Service card intros & notes */
 .service-card__intro { color: var(--ink); font-weight: 600; font-size: .95rem; margin: 0 0 .3rem; }
